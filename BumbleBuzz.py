@@ -325,7 +325,7 @@ if csv_file and audio_folder and os.path.exists(audio_folder):
                     spectro_buf = create_spectrogram(
                         audio, sr, n_fft, hop_length, z_scale_db
                     )
-                    st.image(spectro_buf, use_container_width=True)
+                    st.image(spectro_buf)
                 
                 st.divider()
                 
