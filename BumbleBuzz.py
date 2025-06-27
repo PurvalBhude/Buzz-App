@@ -288,7 +288,7 @@ if csv_file and audio_folder and os.path.exists(audio_folder):
                     decision_col1, decision_col2 = st.columns(2)
                     
                     with decision_col1:
-                        if st.button("✅ BUZZ DETECTED", type="primary", use_container_width=True):
+                        if st.button("✅ BUZZ DETECTED", type="secondary", use_container_width=True):
                             df = update_label(df, current_row.name, 'label_listened', 1)
                             st.success("✅ Marked as BUZZ")
                             time.sleep(0.5)
