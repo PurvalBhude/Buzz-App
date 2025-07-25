@@ -426,7 +426,6 @@ if csv_file and audio_folder and os.path.exists(audio_folder):
                 st.markdown(f"""
                     <div class="frequency-info">
                         🐝 <strong>Buzz Frequency Analysis ({freq_min}-{freq_max} Hz)</strong><br>
-                        consistent horizontal lines or patterns in this frequency range that might indicate bee buzzing activity.
                     </div>
                 """, unsafe_allow_html=True)
                 
