@@ -420,9 +420,9 @@ if csv_file and audio_folder and os.path.exists(audio_folder):
                         audio, sr, n_fft, hop_length, z_scale_db, 
                         title="Full Spectrum Spectrogram"
                     )
-                    st.image(spectro_buf, use_container_width=True)
+                    st.image(spectro_buf)
                 
-                # New buzz frequency range spectrogram
+                # frequency range spectrogram
                 st.markdown(f"""
                     <div class="frequency-info">
                         🐝 <strong>Buzz Frequency Analysis ({freq_min}-{freq_max} Hz)</strong><br>
@@ -435,7 +435,7 @@ if csv_file and audio_folder and os.path.exists(audio_folder):
                     freq_min=freq_min, freq_max=freq_max,
                     title=f"Buzz Frequency Range ({freq_min}-{freq_max} Hz)"
                 )
-                st.image(buzz_spectro_buf, use_container_width=True)
+                st.image(buzz_spectro_buf)
                 
                 st.divider()
                 
