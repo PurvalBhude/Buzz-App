@@ -81,7 +81,7 @@ st.markdown("""
 st.markdown("""
     <div class="main-header">
         <h1>🐝 Bumble Buzz 🐝</h1>
-        <p>Manual verifications with frequency analysis</p>
+        <p>Manual verifications</p>
     </div>
 """, unsafe_allow_html=True)
 
@@ -281,14 +281,6 @@ if not verifier_name.strip():
         2. 📁 Upload your CSV file using the sidebar
         3. 📂 Enter the absolute path to your audio files folder
         4. 🎧 Start reviewing with enhanced frequency analysis
-        
-        This tool will help you manually verify audio predictions where the model detected a buzz 
-        but the original label was "no buzz" (false alarms).
-        
-        **New Features:**
-        - 🎯 Dedicated buzz frequency range spectrogram (150-500 Hz by default)
-        - 👤 Verifier name tracking in output CSV
-        - 📊 Enhanced frequency analysis for better buzz detection
     """)
     st.stop()
 
